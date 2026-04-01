@@ -64,7 +64,7 @@ def send_welcome(message):
 هذا البوت مخصص للتحميل من مواقع التواصل الاجتماعي
 
 - YouTube
-- Instagram
+- pinterest
 - TikTok
 - Twitter
 """
