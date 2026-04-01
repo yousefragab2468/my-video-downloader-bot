@@ -25,8 +25,21 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
-    bot.reply_to(message, "أهلاً بك! أرسل رابط الفيديو (YouTube, TikTok, Facebook, Instagram) لتحميله.")
+    username = message.from_user.first_name  # اسم المستخدم
 
+    text = f"""مرحباً ({username})
+هذا البوت مخصص للتحميل من مواقع التواصل الاجتماعي
+
+هذه هي المواقع التي يدعمها البوت حالياً:
+
+- Snapchat
+- Instagram
+- YouTube
+- TikTok
+- Twitter
+- Pinterest
+"""
+    bot.reply_to(message, text)
 @bot.message_handler(func=lambda message: True)
 def handle_url_message(message):
     url = message.text
