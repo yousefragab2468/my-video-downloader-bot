@@ -21,7 +21,7 @@ def keep_alive():
 
 # -------------------------
 
-TOKEN = "PUT_YOUR_NEW_TOKEN_HERE"
+TOKEN = "8719355025:AAEeFz-f36CdPDbeCFuQjTowq75X9dOR8Js"
 bot = telebot.TeleBot(TOKEN)
 
 # ✅ Progress Hook
