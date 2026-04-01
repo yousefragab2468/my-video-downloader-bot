@@ -126,4 +126,4 @@ def download(call):
 if __name__ == "__main__":
     keep_alive()
     print("البوت بدأ العمل...")
-    bot.infinity_polling()    bot.polling(none_stop=True)
+    bot.infinity_polling()
